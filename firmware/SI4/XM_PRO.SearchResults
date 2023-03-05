@@ -1,0 +1,11 @@
+---- ucUSART1_ReceiveMessageNumber Matches (7 in 4 files) ----
+vFrameDataHandlerTask in FrameHandle.c (D:\mdk_pro\小米扫地机程序\firmware\Protocol) :         if(ucUSART1_ReceiveMessageNumber && FR_Rx.IsFrameNotProcess == false)
+usart1.c (D:\mdk_pro\小米扫地机程序\firmware\SYSTEM\usart1) line 59 : uint8_t ucUSART1_ReceiveMessageNumber = 0;                       //USART1还未处理的消息数
+usart1.h (D:\mdk_pro\小米扫地机程序\firmware\SYSTEM\usart1) line 28 :         ucUSART1_ReceiveMessageNumber++
+usart1.h (D:\mdk_pro\小米扫地机程序\firmware\SYSTEM\usart1) line 33 :         ucUSART1_ReceiveMessageNumber--
+usart1.h (D:\mdk_pro\小米扫地机程序\firmware\SYSTEM\usart1) line 36 : #define usartGET_TEST_RECEIVE_MESSAGE_NUMBER(  )  ucUSART1_ReceiveMessageNumber 
+usart1.h (D:\mdk_pro\小米扫地机程序\firmware\SYSTEM\usart1) line 52 : extern uint8_t ucUSART1_ReceiveMessageNumber ;                       //USART1还未处理的消息数
+usmart_scan in usmart.c (D:\mdk_pro\小米扫地机程序\firmware\USMART) : 	if(ucUSART1_ReceiveMessageNumber)//串口接收完成？
+---- ucUSART1_ReceiveMessageNumber Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\mdk_pro\小米扫地机程序\firmware\USER\stm32f10x.h : File could not be opened.
